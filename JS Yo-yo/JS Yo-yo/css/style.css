@@ -1,0 +1,196 @@
+*{
+    list-style-type: none;
+
+    font-family: Arial;
+    font-weight: 100;
+}
+
+h2,h1,h3{
+    font-weight: bold;
+}
+/* @font-face {
+    font-family: ArialLight;
+    src: url("path/ArialMTStd-Light.otf") format("opentype");
+} */
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.spec {
+    /* padding-left:5em; */
+}
+
+/* BEGIN NAVBAR */
+
+.logo-main-nav{
+    width: 200x;
+    height: 200px;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li{
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    height : 30px;
+    width : 20%;
+
+
+    background-color: white;
+    color:black;
+
+}
+
+.main-nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.main-nav>ul>li>ul>li{
+    width: 100%;
+}
+
+.main-nav li:hover{
+    background-color: red;
+    color:white;
+}
+
+
+.main-nav>ul>li:hover>ul{
+    display: block;
+    
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+}
+
+/* END NAV BAR */
+
+
+@media screen and (max-width: 400px){
+    .header{
+        background-color: purple;
+    }
+
+ 
+    .main-nav ul li{
+        width:100%;
+    }
+ 
+    .main-nav>ul>li>ul{
+        position: relative;
+    }
+}
+
+
+/* BEGIN CONTENT */
+.all-content{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 1em;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto); /*makes rows automatically change */
+}
+
+.all-content > div{
+    background: #eee;
+    padding: 1em;
+}
+
+.all-content > div:nth-child(odd){
+    background: white;
+}
+
+
+/* END CONTENT */
+
+
+/* Begin slides */
+
+
+.imageSlide {
+    height: 300px;
+    width: 300px;
+}
+
+/* END SLIDES */
+
+
+/* BEGIN FOOTER */
+
+.all-footer{
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 1.1fr 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    /* font-family: ArialLight; */
+    padding: 10px;
+    background-color: #171717;
+    width: 100%;
+    color: white;
+
+}
+
+.all-footer>div>ul{
+    padding:12px;
+}
+
+.site-map-footer{
+    padding: 0;
+}
+
+
+/* BEGIN NEWSLETTER CSS */
+
+/* Style the form element with a border around it */
+form {
+
+}
+
+.sizeInputFooter {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+    padding: 20px;
+    
+    width: 80%;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    display: inline-block;   
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+/* END NEWSLETTER CSS */
+
+
+/* END FOOTER */

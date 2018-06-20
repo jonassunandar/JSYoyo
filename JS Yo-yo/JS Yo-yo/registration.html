@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration</title>
+    </head>
+<body>
+<form id = "registration" action="thankyou.html" onsubmit="return validation()" method='POST'>
+
+        <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><select name="city">
+                        <option value="">--Choose--</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Tangerang">Tangerang</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+    
+            </table>
+            
+            <div id="error"> </div>
+        <script type = "text/javascript" src = "JS/script.js"></script>
+</form>
+</body>
+</html>
