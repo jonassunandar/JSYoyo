@@ -23,6 +23,51 @@ a{
     /* padding-left:5em; */
 }
 
+/* Grid Styling */
+.col1-12{
+    width : 100%;
+}
+.col1-11{
+    width : 91.66666667%;
+}
+.col1-10{
+    width : 83.33333333%;
+}
+.col1-9{
+    width : 75%;
+}
+.col1-8{
+    width : 66.666666667%;
+}
+.col1-7{
+    width : 58.33333333%;
+}
+.col1-6{
+    width : 50%;
+}
+.col1-5{
+    width : 41.66666667%;
+}
+.col1-4{
+    width : 33.33333333%;
+}
+.col1-3{
+    width : 25%;
+}
+.col1-2{
+    width : 16.66666667%;
+}
+.col1-1{
+    width : 8.33333333%;
+}
+.groupForm{
+    margin-bottom : 15px;
+}
+
+.groupForm>span{
+    font-weight: bold;
+}
+
 /* BEGIN NAVBAR */
 
 .logo-main-nav{
@@ -155,8 +200,8 @@ a{
 /* BEGIN NEWSLETTER CSS */
 
 /* Style the form element with a border around it */
-form {
-
+.groupFrom>span{
+    font-weight: bolder;
 }
 
 .sizeInputFooter {
@@ -167,30 +212,61 @@ form {
 /* Add some padding and a grey background color to containers */
 .container {
     padding: 20px;
-    
     width: 80%;
 }
 
 /* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=reset],
+textarea,
+select {
     width: 100%;
-    padding: 12px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin: 0;
     display: inline-block;   
     box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+textarea{
+    resize: none;
 }
 
 /* Style the submit button */
-input[type=submit] {
+.btn{
+    text-align: center;
+}
+
+input[type=submit].subscribe {
     background: orange;
     color: white;
     border: none;
 }
 
-input[type=submit]:hover {
+input[type=submit].submitForm,
+input[type=reset].resetForm {
+    background-color: none;
+    color : black;
+    margin-bottom : 5px;    
+    max-width: 25%;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
     opacity: 0.8;
 }
+
+
 /* END NEWSLETTER CSS */
 
 
 /* END FOOTER */
+
+/* Registration Form */
+#registration{
+    margin-left: 25%;
+}
