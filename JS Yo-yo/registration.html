@@ -2,53 +2,122 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
         <title>Registration</title>
     </head>
 <body>
-<form id = "registration" action="thankyou.html" onsubmit="return validation()" method='POST'>
-
-        <table>
-                <tr>
-                    <td>Name</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="text" name="email"></td>
-                </tr>
-                <tr>
-                    <td>Gender</td>
-                    <td>
-                        <input type="radio" name="gender" value="male">Male
-                        <input type="radio" name="gender" value="female">Female
-                    </td>
-                </tr>
-                <tr>
-                    <td>City</td>
-                    <td><select name="city">
-                        <option value="">--Choose--</option>
-                        <option value="Jakarta">Jakarta</option>
-                        <option value="Bandung">Bandung</option>
-                        <option value="Tangerang">Tangerang</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td><textarea name="address" cols="30" rows="10"></textarea></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type="password" name="password"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit"></td>
-                    <td><input type="reset"></td>
-                </tr>
+    <div class = "main-nav">
+            <img src = "img/logo.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Pro/1-1.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Basic/b1-1.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Basic/b2-1.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Pro/2-3.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Basic/b1-2.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Basic/b3-1.jpg" class = "logo-main-nav">
+            <img src = "img/yoyo/Pro/2-1.jpg" class = "logo-main-nav">
+        <ul>
+            <a href="../JS Yo-yo/index.html"><li>Home</li></a>
+            <li>Type
+                <ul>
+                    <a href="../JS Yo-yo/basic.html"><li>Basic</li></a>
+                    <a href="../JS Yo-yo/professional.html"><li>Professional</li></a>
+                </ul>
+            </li>
+            <a href="../JS Yo-yo/tutorial.html"><li>Tutorials</li></a>
+            <a href="../JS Yo-yo/contact.html"><li>Contact</li></a>
+            <a href="../JS Yo-yo/registration.html"><li>Registration</li></a>
+        </ul>
+    </div>
     
-            </table>
+    <form id = "registration" class = "col1-6" action="thankyou.html" onsubmit="return validation()" method='POST'>
+        <div class = "groupForm">
+            <span>Name</span>
+            <input type="text" name="name">
+        </div>
+
+        <div class = "groupForm">
+            <span>Email</span>
+            <input type="text" name="email">
+        </div>
+
+        <div class = "groupForm">
+            <span>Gender</span>
+            <br><hr>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <hr>
+        </div>
+
+        <div class = "groupForm">
+            <span>City</span>
+            <select name="city">
+                <option value="">--Choose--</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Tangerang">Tangerang</option>
+            </select>
+        </div>
+        
+        <div class = "groupForm">
+            <span>Address</span>
+            <textarea name="address" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class = "groupForm">
+            <span>Password</span>
+            <input type="password" name="password">
+        </div>
+
+        <div class = "btn">
+            <input type="submit" class = "submitForm">
+            <input type="reset" class = "resetForm">
+        </div>
             
-            <div id="error"> </div>
+        <div id="error"> </div>
         <script type = "text/javascript" src = "JS/script.js"></script>
-</form>
+    </form>
 </body>
+
+<footer class = "all-footer">
+    <img src="img/logo.jpg" style="width: 100%; border-radius: 40%;">
+
+    <div class = "site-map-footer">
+        <h2>Site Map</h2>
+        <ul>
+            <a href="../JS Yo-yo/index.html"><li>Home</li></a>
+            <a href="../JS Yo-yo/basic.html"><li>Basic</li></a>
+            <a href="../JS Yo-yo/professional.html"><li>Professional</li></a>
+            <a href="../JS Yo-yo/tutorial.html"><li>Tutorials</li></a>
+            <a href="../JS Yo-yo/contact.html"><li>Contact</li></a>
+            <a href="../JS Yo-yo/registration.html"><li>Registration</li></a>
+        </ul>
+    </div>
+    <div>
+        <form action="">
+            <div class="container" style = "padding: 0">
+            <h2>Subscribe to our Newsletter</h2>
+            </div>
+        
+            <div class="container" style="padding-left: 0">
+            <input class = "sizeInputFooter" type="text" placeholder="Email address" name="mail" required>
+            <br>
+            </div>
+        
+            <div class="container" style="padding-left: 0">
+            <input type="submit" class = "subscribe" value="Subscribe" >
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <h2>Contact Us!</h2>
+        <h4>
+            JSYoyo<br>
+            Jalan Gunung Sahari Dalam 8 No 5A,<br>
+            Jakarta Pusat 10720<br>
+            (+62) 822 - 4437 - 8063
+        </h4>
+    </div>
+</footer>
+
 </html>
