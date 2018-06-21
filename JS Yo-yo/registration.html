@@ -29,28 +29,33 @@
         </ul>
     </div>
     
-    <form id = "registration" class = "col1-6" action="thankyou.html" onsubmit="return validation()" method='POST'>
+    <form id = "registration" class = "col1-6" onsubmit="return validation()" method='POST'>
         <div class = "groupForm">
             <span>Name</span>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
         </div>
 
         <div class = "groupForm">
             <span>Email</span>
-            <input type="text" name="email">
+            <input type="text" name="email" required>
         </div>
 
         <div class = "groupForm">
+            <span>Password</span>
+            <input type="password" name="password" required>
+        </div>
+        
+        <div class = "groupForm">
             <span>Gender</span>
             <br><hr>
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female
             <hr>
         </div>
 
         <div class = "groupForm">
             <span>City</span>
-            <select name="city">
+            <select name="city" required>
                 <option value="">--Choose--</option>
                 <option value="Jakarta">Jakarta</option>
                 <option value="Bandung">Bandung</option>
@@ -60,12 +65,7 @@
         
         <div class = "groupForm">
             <span>Address</span>
-            <textarea name="address" cols="30" rows="10"></textarea>
-        </div>
-        
-        <div class = "groupForm">
-            <span>Password</span>
-            <input type="password" name="password">
+            <textarea name="address" cols="30" rows="10" required></textarea>
         </div>
 
         <div class = "btn">
@@ -93,7 +93,7 @@
         </ul>
     </div>
     <div>
-        <form action="">
+        <form action="registration.html">
             <div class="container" style = "padding: 0">
             <h2>Subscribe to our Newsletter</h2>
             </div>
