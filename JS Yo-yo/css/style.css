@@ -5,9 +5,15 @@
     font-weight: 100;
 }
 
-h2,h1,h3{
+h1,h3{
     font-weight: bold;
 }
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
 /* @font-face {
     font-family: ArialLight;
     src: url("path/ArialMTStd-Light.otf") format("opentype");
@@ -70,9 +76,35 @@ a{
 
 /* BEGIN NAVBAR */
 
+#logo{
+    width:7%;
+    height: 7%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
 .logo-main-nav{
-    width: 200x;
-    height: 200px;
+    width: 5%;
+    height: 5%;
+    padding-bottom: 5%;
+}
+
+.logoYoyo{
+    text-align: center;
+    display: inline-block;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.logoHeader > p {
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
 }
 
 .main-nav ul {
@@ -106,7 +138,7 @@ a{
 }
 
 .main-nav li:hover{
-    background-color: red;
+    background-color: orange;
     color:white;
 }
 
@@ -123,6 +155,8 @@ a{
 
 /* END NAV BAR */
 
+
+/* GUA CUMA COPAS DOANG DARI LAB WAKTU ITU */
 
 @media screen and (max-width: 400px){
     .header{
@@ -158,6 +192,9 @@ a{
     background: white;
 }
 
+.content{
+    padding-top: 3%;
+}
 
 /* END CONTENT */
 
@@ -181,15 +218,25 @@ a{
     grid-gap: 1em;
     align-items: center;
     /* font-family: ArialLight; */
-    padding: 10px;
     background-color: #171717;
+    margin-top: 10%;
     width: 100%;
     color: white;
 
 }
 
+.all-footer>.logo{
+    width: 45%;
+    height: 60%;
+    padding: 20%;
+}
+
 .all-footer>div>ul{
     padding:12px;
+}
+
+.all-footer>div>ul>a>li{
+    padding:1%;
 }
 
 .site-map-footer{
@@ -205,8 +252,9 @@ a{
 }
 
 .sizeInputFooter {
-    width: 100%;
-    height: 100%;
+    width: 15em;
+    height: 2.5em;
+    font-size: 16px;
 }
 
 /* Add some padding and a grey background color to containers */
@@ -242,9 +290,14 @@ textarea{
 }
 
 input[type=submit].subscribe {
-    background: orange;
-    color: white;
     border: none;
+    width:19em;
+    height: 2.5em;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border-style: solid;
+    border-color: orange;
 }
 
 input[type=submit].submitForm,
@@ -257,7 +310,10 @@ input[type=reset].resetForm {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
+    cursor: pointer;
     opacity: 0.8;
+    background: orange;
+    color: white;
 }
 
 
