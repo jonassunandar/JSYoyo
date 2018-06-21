@@ -5,9 +5,15 @@
     font-weight: 100;
 }
 
-h2,h1,h3{
+h1,h3{
     font-weight: bold;
 }
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
 /* @font-face {
     font-family: ArialLight;
     src: url("path/ArialMTStd-Light.otf") format("opentype");
@@ -70,9 +76,34 @@ a{
 
 /* BEGIN NAVBAR */
 
+#logo{
+    width:7%;
+    height: 7%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
 .logo-main-nav{
-    width: 200x;
-    height: 200px;
+    width: 5%;
+    height: 5%;
+}
+
+.logoYoyo{
+    text-align: center;
+    display: inline-block;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.logoHeader > p {
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
 }
 
 .main-nav ul {
@@ -190,8 +221,18 @@ a{
 
 }
 
+.all-footer>.logo{
+    width: 40%;
+    height: 60%;
+    padding: 20%;
+}
+
 .all-footer>div>ul{
     padding:12px;
+}
+
+.all-footer>div>ul>a>li{
+    padding:1%;
 }
 
 .site-map-footer{
@@ -247,6 +288,8 @@ input[type=submit].subscribe {
     background: orange;
     color: white;
     border: none;
+    width:100%;
+    height: 20px;
 }
 
 input[type=submit].submitForm,
